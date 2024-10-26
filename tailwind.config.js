@@ -1,15 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html"],
+  content: [
+    "./views/**/*.ejs", // Path to your EJS files
+    "./public/**/*.js", // Include any other JS files in your public directory
+  ],
   theme: {
     extend: {},
-    screens: {
-      'sm': '640px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1280px',
-      '2xl': '1536px',
-    },
   },
-  plugins: [require('daisyui'),],
+  plugins: [],
 }
+
